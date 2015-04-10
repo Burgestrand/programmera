@@ -1,0 +1,15 @@
+<p>
+  Färger!
+</p>
+
+<ul>
+  <% 10.times do %>
+    <li>
+      <% r = rand(0..255) %>
+      <% g = rand(0..255) %>
+      <% b = rand(0..255) %>
+      <span class="color" style="background: rgb(<%= r %>, <%= g %>, <%= b %>)"></span>
+      <%= r %>, <%= g %>, <%= b %>
+    </li>
+  <% end %>
+</ul>

@@ -9,3 +9,7 @@ require "sinatra/reloader" if development?
 get "/" do
   erb :index
 end
+
+get "/colors" do
+  erb :colors, layout: :"layouts/main"
+end
